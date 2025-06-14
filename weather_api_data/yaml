@@ -1,0 +1,19 @@
+4. Parses the JSON response.
+5. Prints:
+- City
+- Temperature (°C)
+- Humidity (%)
+- Weather Description (e.g., "clear sky")
+- Pressure (hPa)
+
+---
+
+## 🛠️ Setup
+
+1. Get a free API key from: [https://openweathermap.org/api](https://openweathermap.org/api)
+2. Replace the following values in the code:
+```cpp
+const char* ssid = "YOUR_WIFI_SSID";
+const char* password = "YOUR_WIFI_PASSWORD";
+const char* apiKey = "YOUR_API_KEY";
+  
