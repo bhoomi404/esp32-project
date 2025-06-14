@@ -35,16 +35,19 @@ void setup(){
 
     Serial.print("Enter network number to connect:");
     while(Serial.available()==0){}  ///waits until something is types in serial monitor
+   
     int choice =Serial.parseInt(); //Gets SSID of selecetd number
+    Serial.print(choice);
     selectedSSID = WiFi.SSID(choice-1); //prints the network name that is selected
 
-    Serial.println("Enter password:");
+    Serial.print(" Enter password:");
     while (Serial.available())Serial.read(); // clears input
 
     while(Serial.available()==0){} // Waits while user type something
     password=Serial.readStringUntil('\n');
     password.trim(); //remove extra spaces
-
+    Serial.println(password);
+    
     Serial.print("Connecting to ");
     Serial.print(selectedSSID);
     Serial.print("....");
